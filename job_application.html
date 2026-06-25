@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Job Application Form</h1>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+      </fieldset>
+
+                <fieldset>
+            <legend>Job Information</legend>
+            <label for="position">Position Applied For:</label>
+            <select id="position" name="position" required>
+                <option value="">Select Position</option>
+                <option value="Software Developer">Software Developer</option>
+                <option value="Web Designer">Web Designer</option>
+                <option value="Network Engineer">Network Engineer</option>
+                <option value="Database Administrator">Database Administrator</option>
+                <option value="IT Support Officer">IT Support Officer</option>
+            </select><br><br>
+
+            <label for="experience">Experience Level:</label>
+            <select id="experience" name="experience" required>
+                <option value="Fresher">Fresher</option>
+                <option value="1-2 Years">1–2 Years</option>
+                <option value="3-5 Years">3–5 Years</option>
+                <option value="More Than 5 Years">More Than 5 Years</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Select Your Technical Skills:</label><br>
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css" name="skills" value="CSS">  
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+            <input type="checkbox" id="python" name="skills" value="Python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" id="SQL" name="skills" value="SQL">
+            <label for="SQL">SQL</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Information</legend>
+            <label for="education">Highest Qualification:</label>
+            <input type="text" id="education" name="education" required><br><br>
+
+            <label for="university">University/College:</label>
+            <input type="text" id="university" name="university" required><br><br>
+
+            <label for="graduation">Year of Graduation:</label>
+            <input type="number" id="graduation" name="graduation" min="1900" max="2099" step="1" required> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="Upload Resume or CV">Upload Resume or CV:</label><br>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+
+            <label for="coverLetter">Cover Letter:</label><br>
+            <textarea id="coverLetter" name="coverLetter" rows="5" cols="50" minlength="10" maxlength="300" required></textarea><br><br>
+
+            <label for="address">Current Address:</label><br>
+            <textarea id="address" name="address" rows="3" cols="50" required></textarea><br><br>
+
+        </fieldset><br>
+
+
+        
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        
+
+    </form>
+
+</body>
+</html>
