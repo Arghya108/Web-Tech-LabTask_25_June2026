@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>X Company - Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Job Application Form</h1>
+
+        <form action="#" method="post">
+
+            <!-- Personal Info -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="PersonalInfo">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                
+
+               
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" name="id" required><br><br>
+                
+               
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                
+               
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+                
+
+               
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                
+
+                
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Others Not Allowed</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <!-- Job Information -->
+            <fieldset>
+                <legend>Job Information</legend>
+
+                <div class="JobInfo">
+                    <label for="position">Position Applied For:</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select Position</option>
+                        <option value="Software Developer">Software Developer</option>
+                        <option value="Web Designer">Web Designer</option>
+                        <option value="Network Engineer">Network Engineer</option>
+                        <option value="Database Administrator">Database Administrator</option>
+                        <option value="IT Support Officer">IT Support Officer</option>
+                    </select>
+                </div><br>
+
+                <div class="experience">
+                    <label for="experience">Experience Level: </label>
+                    <select id="experience" name="experience" required>
+                        <option value="Fresher">Fresher</option>
+                        <option value="1-2 Years">1–2 Years</option>
+                        <option value="3-5 Years">3–5 Years</option>
+                        <option value="More Than 5 Years">More Than 5 Years</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <!-- Skills -->
+            <fieldset>
+                <legend>Skills</legend>
+
+                <label>Select Your Technical Skills</label>
+
+                <div class="skills">
+                    <label><input type="checkbox" name="skills" value="HTML"> HTML</label><br>
+                    <label><input type="checkbox" name="skills" value="CSS"> CSS</label><br>
+                    <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label><br>
+                    <label><input type="checkbox" name="skills" value="Python"> Python</label><br>
+                    <label><input type="checkbox" name="skills" value="SQL"> SQL</label>
+                </div>
+
+            </fieldset>
+
+            <!-- Educational Info-->
+            <fieldset>
+                <legend>Educational Information</legend>
+
+                <div class="Qualification">
+                    <label for="education">Highest Qualification:</label>
+                    <input type="text" id="education" name="education" required>
+                </div><br>
+
+                <div class="university">
+                    <label for="university">University/College:</label>
+                    <input type="text" id="university" name="university" required>
+                </div><br>
+
+                <div class="graduation">
+                    <label for="graduation">Year of Graduation:</label>
+                    <input type="number" id="graduation" name="graduation" min="1900" max="2099" required>
+                </div><br>
+
+            </fieldset>
+
+            <!-- Additional Info -->
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <div class="Resume">
+                    <label for="resume">Upload Resume or CV:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div><br>
+
+                <div class="Letter">
+                    <label for="coverLetter">Cover Letter:</label>
+                    <textarea id="coverLetter" name="coverLetter" rows="5" required></textarea>
+                </div><br>
+
+                <div class="Address">
+                    <label for="address">Current Address: </label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+            </fieldset>
+
+            <div class="button-group">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
