@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Workshop Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Registration For Workshop</h2>
+
+        <form id="registrationForm">
+
+            <label><b>First Name:</b></label><br>
+            <input type="text" id="fname">
+            <span class="error" id="fnameError"></span>
+            <br><br>
+
+            <label><b>Last Name:</b></label><br>
+            <input type="text" id="lname">
+            <span class="error" id="lnameError"></span>
+            <br><br>
+
+            <label><b>Email:</b></label><br>
+            <input type="email" id="email">
+            <span class="error" id="emailError"></span>
+            <br><br>
+
+            <label><b>Password:</b></label><br>
+            <input type="password" id="password">
+            <span class="error" id="passwordError"></span>
+            <br><br>
+
+            <label><b>Gender:</b></label><br>
+            <div class="gender">
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+</div>
+
+<span class="error" id="genderError"></span>
+
+<br><br>
+
+    <label><b>Interests:</b></label><br>
+
+        <div class="interests">
+            <input type="checkbox" class="interest"> Web Development
+            <input type="checkbox" class="interest"> AI
+            <input type="checkbox" class="interest"> Networking
+        </div>
+
+<span class="error" id="interestError"></span>
+
+<br><br>
+
+            <label><b>Department:</b></label><br>
+
+            <select id="department">
+                <option value="">Select Department</option>
+                <option>CSE</option>
+                <option>EEE</option>
+                <option>BBA</option>
+                <option>Architecture</option>
+            </select>
+
+            <br>
+            <span class="error" id="departmentError"></span>
+            <br><br>
+
+            <label><b>About Yourself:</b></label><br>
+
+            <textarea id="about" rows="5"></textarea>
+
+            <br>
+            <span class="error" id="aboutError"></span>
+            <br><br>
+          
+
+            
+            <button type="submit">Register</button>
+
+        </form>
+
+        <h3 id="success"></h3>
+
+    </div>
+
+    <script src="form.js"></script>
+
+</body>
+
+</html>

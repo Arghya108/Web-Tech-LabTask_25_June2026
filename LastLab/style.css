@@ -1,0 +1,67 @@
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial;
+    background:#f2f2f2;
+}
+
+.container{
+    width:400px;
+    margin:30px auto;
+    padding:20px;
+    border:1px solid gray;
+    background:rgb(194, 213, 225);
+    box-sizing:border-box;
+    
+}
+
+h2{
+    text-align:center;
+}
+
+.gender input{
+    width:auto;
+}
+
+.gender{
+    margin-top:5px;
+}
+
+.interests input{
+    width:auto;
+}
+
+.interests{
+    margin-top:5px;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+}
+
+
+button{
+    padding:10px 20px;
+    background:rgb(52, 137, 79);
+    color:white;
+    border:none;
+    cursor:pointer;
+    
+}
+
+
+
+.error{
+    color:red;
+    font-size:14px;
+}
+
+#success{
+    color:green;
+    text-align:center;
+}
